@@ -1,0 +1,28 @@
+<scroll-view class="scrollarea" scroll-y type="list">
+  <!-- 导游推荐 -->
+<view class="recommend">
+  <view class="guide">
+  <view class="text">导游推荐</view>
+  <view class="guidelist">
+    <view  wx:for="{{guidelist}}" wx:key="index" bind:tap="getId" data-id="{{item._id}}">
+      <view class="guidename">{{item.name}}</view>
+      <image class="guidephoto" src="{{item.photo}}" mode=""/>
+    </view>
+  </view>
+  <!-- 旅游服务推荐 -->
+  <view class="text">服务套餐推荐</view>
+  <view class="guidelist">
+    <view  wx:for="{{service}}" wx:key="index" >
+      <image class="guidephoto" src="{{item.pic}}" mode=""/>
+      <view class="guidename">{{item.title}}</view>
+    </view>
+  </view>
+
+  <!-- 跳转AI询问 -->
+  <view class="ai" bind:tap="GoAi">
+    <image class="aiImg" src="../../assets/icon/AI.png" mode="aspectFit" />
+  </view>
+</view>
+</view>
+</scroll-view>
+

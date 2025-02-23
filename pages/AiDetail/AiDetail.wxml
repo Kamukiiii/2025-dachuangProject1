@@ -1,0 +1,9 @@
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="outcontent">
+    <textarea style="width: 100%; height: 100%; overflow-y: scroll;">
+      {{outcontent}}
+    </textarea>
+  </view>
+  <input class="inp" type="text" bindinput="getincontent" placeholder="请输入您要询问的问题"/>
+  <image src="../../assets/icon/发布.png" bind:tap="generateAi" class="submit" mode=""/>
+</scroll-view>

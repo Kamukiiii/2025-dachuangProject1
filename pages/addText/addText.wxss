@@ -1,0 +1,46 @@
+/* pages/addText/addText.wxss */
+.add{
+  padding-top: 50px;
+  padding-left: 15px;
+  height: 100vh;
+  background-image: url("https://gd-hbimg.huaban.com/a05a48c237f8c491d4699dbf738d1225364aa12424fa3-AkehbZ_fw240webp");
+  background-size: cover;
+}
+.pic{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  opacity: 0.5;
+  border-radius: 10%;
+}
+.addPic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 50px;
+  height: 50px;
+}
+.exited{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content{
+  padding: 10px;
+  height: 250px;
+}
+.inpTitle{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.inpContent{
+  margin-top: 20px;
+  font-size: 17px;
+}
+.submit{
+  background-color: green;
+  color: white;
+  width: 200px;
+}

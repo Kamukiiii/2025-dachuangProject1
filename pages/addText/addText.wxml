@@ -1,0 +1,13 @@
+<view class="add">
+<!-- 上传图片 -->
+  <view class="pic" bind:tap="uploadPic">
+    <image wx:if="{{!userPhoto}}" class="addPic" src="../../assets/icon/addPic.png" />
+    <image wx:else="{{userPhoto}}" class="exited" src="{{userPhoto}}" />
+  </view>
+  <!-- 上传标题 -->
+  <view class="content">
+    <input type="text" placeholder="请输入标题" class="inpTitle" bindinput="getTitle"/>
+    <textarea type="text" placeholder="请输入内容" class="inpContent" bindinput="getDesc"/>
+  </view>
+  <button class="submit" bind:tap="uploadArtile">发布</button>
+</view>

@@ -1,0 +1,26 @@
+<view class="comdetail">
+  <!-- 标题和描述 -->
+  <image class="photo" src="{{detail.photoUrl}}" mode=""/>
+  <view class="title">{{detail.title}}</view>
+  <view class="desc">{{detail.desc}}</view>
+  <!-- 点赞和收藏 -->
+  <image class="dianlove" src="{{loveUrl}}" bind:tap="clickLove" />
+  <image  class="dianlove" src="{{collectUrl}}" bind:tap="clickCollect" />
+
+    <!-- 评论 -->
+  <image class="avatar" src="{{avatarUrl}}"/>
+  <input class="inp" type="text" placeholder="请输入您的评论" bindinput="getContent" value="{{content}}"/>
+  <image src="../../assets/icon/发布.png" bind:tap="shareContent" class="submit" mode=""/>
+  <block wx:for="{{nowpinglun}}" wx:key="index">
+    <view class="comment">
+      <image class="avatar2" src="{{avatarUrl}}"/>
+      <view class="comment2">
+        <text class="name">{{item.name}}</text>
+        <text class="content">{{item.content}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+  

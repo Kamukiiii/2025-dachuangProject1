@@ -1,0 +1,17 @@
+.outcontent{
+  height: 550px;
+  border: 1px solid #000000;
+}
+.inp{
+  border: 2px solid #000000;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 310px;
+  margin-left: 10px;
+}
+.submit{
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  transform: translate(320px,-40px);
+}

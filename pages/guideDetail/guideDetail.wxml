@@ -1,0 +1,20 @@
+<view class="text">
+  <text>导游介绍</text>
+</view>
+<!-- 导游详细介绍 -->
+<view class="guideDetail">
+  <view class="guide">
+    <image class="photo" src="{{guide_photo}}" mode=""/>
+    <view class="guide_name">
+      {{guide_name}}
+    </view>
+  </view>
+  <view class="guide_desc">
+    {{guide_desc}}
+  </view>
+</view>
+
+<!-- 联系导游/联系我们成为导游 -->
+<view class="contact">联系导游: {{guide_tel}}</view>
+<view class="contact">联系我们: 2498282923@qq.com</view>
+

@@ -1,0 +1,44 @@
+/* pages/recommend/recommend.wxss */
+.scrollarea{
+  background-image: url('https://gd-hbimg.huaban.com/6ddd2d171addc3b9e84bf9114124cf1b1cd202ea19a10-Jag7vj_fw658webp');
+  height: 100vh;
+  background-size: cover;
+}
+.guide{
+  text-align: center;
+}
+.text{
+  display: inline-block; 
+  border-style:double ;
+  padding: 10px 20px; 
+  font-family: 'kaiti'; 
+  font-size: 24px; 
+  text-align: center; 
+  color: black; 
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.guidelist{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.guidename{
+  margin-top:10px;
+  font-size: 20px;
+}
+.guidephoto{
+  width: 100px;
+  height: 100px;
+}
+.ai{
+  position: fixed;
+  right: 10px;
+  bottom: 150px;
+  width: 50px;
+  height: 50px;
+}
+.aiImg{
+  width: 100%;
+  height: 100%;
+}

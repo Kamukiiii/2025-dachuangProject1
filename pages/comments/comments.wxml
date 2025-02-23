@@ -1,0 +1,13 @@
+
+  <!-- 社区界面 -->
+  <block wx:for="{{datalist}}" wx:key="index">
+    <view class="itemRoot" bind:tap="GoComdetail" data-id="{{item._id}}">
+      <!-- 从数据库中拿数据 -->
+      <image src="{{item.photoUrl}}" mode=""/>
+      <text class="title">{{item.title}}</text> 
+      <text class="detail">{{item.desc}}</text>
+    </view>
+  </block>
+  <view class="addText">
+    <image src="../../assets/icon/add.png" bind:tap="GoAddText"/>
+  </view>

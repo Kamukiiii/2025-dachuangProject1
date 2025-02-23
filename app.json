@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/recommend/recommend",
+    "pages/comments/comments",
+    "pages/guideDetail/guideDetail",
+    "pages/AiDetail/AiDetail",
+    "pages/comDetail/comDetail",
+    "pages/addText/addText"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#79AAAD",
+    "navigationBarTitleText": "东坡文旅",
+    "homeButton": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#f3514f",
+    "color": "#666",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "./assets/icon/首页.png",
+        "selectedIconPath": "./assets/icon/选中-首页.png"
+      },
+      {
+        "text": "推荐",
+        "pagePath": "pages/recommend/recommend",
+        "iconPath": "./assets/icon/推荐-反推荐.png",
+        "selectedIconPath": "./assets/icon/selected-re.png"
+      },
+      {
+        "text": "讨论",
+        "pagePath": "pages/comments/comments",
+        "iconPath": "./assets/icon/讨论.png",
+        "selectedIconPath": "./assets/icon/selected-comments.png"
+      },
+      {
+        "text": "登录",
+        "pagePath": "pages/login/login",
+        "iconPath": "./assets/icon/登录.png",
+        "selectedIconPath": "./assets/icon/selected-login.png"
+      }
+    ]
+  }
+}

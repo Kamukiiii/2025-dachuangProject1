@@ -1,0 +1,92 @@
+<!--index.wxml-->
+
+<scroll-view class="scrollarea" scroll-y type="list">
+<view class="swiper">
+ <swiper 
+  autoplay 
+  interval="2000"
+  indicator-dots
+  indicator-color="#fff"
+  indicator-active-color="#f3514f"
+  circular
+  style="height: 180px;"
+>
+   <swiper-item>
+     <image src="../../assets/banner1.jpg" style="width: 100%; height: 100%; object-fit:cover;"/>
+   </swiper-item>
+   <swiper-item>
+    <image src="../../assets/banner2.jpg" style="width: 100%; height: 100%; object-fit:cover;" />
+   </swiper-item>
+   <swiper-item>
+    <image src="../../assets/banner3.jpg" style="width: 100%; height: 100%; object-fit:cover;" />
+   </swiper-item>
+ </swiper>
+</view>
+<!-- 头部：整体介绍 -->
+<view class="header">
+  <!-- 景点 -->
+  <view class="nav">
+    <view class="navPic">
+      <image src="../../assets/navPic3.png" bind:tap="showCard1" alt=""/>
+    </view>
+    <view class="text">景点</view>
+  </view>
+  <!-- 美食 -->
+  <view class="nav">
+    <view class="navPic">
+      <image src="../../assets/navPic1.png"alt=""/>
+    </view>
+    <view class="text">美食</view>
+  </view>
+  <!-- 酒店 -->
+  <view class="nav">
+    <view class="navPic">
+      <image src="../../assets/navPic2.png"alt=""/>
+    </view>
+    <view class="text">酒店</view>
+  </view>
+  <!-- 社区 -->
+  <view class="nav">
+    <view class="navPic">
+      <image src="../../assets/navPic5.png"alt=""/>
+    </view>
+    <view class="text">社区</view>
+  </view>
+  <view class="nav">
+    <view class="navPic">
+      <image src="../../assets/navPic4.png"alt=""/>
+    </view>
+    <view class="text">指南</view>
+  </view>
+</view>
+<!-- 中部：板块介绍 -->
+<view class="middle">
+  <view class="content">景点推荐</view>
+  <view class="viewpoint">
+    <image src="../../assets/viewpoint1.jpg" mode=""/>
+    <view class="view-text">中和古镇</view>
+  </view>
+  <view class="viewpoint">
+    <view class="view-text">东坡书院</view>
+    <image src="../../assets/viewpoint2.jpg" mode=""/>
+    
+  </view>
+  <view class="viewpoint">
+    <image src="../../assets/viewpoint3.jpg" mode=""/>
+    <view class="view-text">咣啷庵遗址</view>
+  </view>
+  <view class="content">美食推荐</view>
+  <view class="viewpoint">
+    <view class="view-text">儋州米烂</view>
+    <image src="../../assets/food2.jpg" mode=""/>
+  </view>
+  <view class="viewpoint">
+    <image src="../../assets/food1.jpg" mode=""/>
+    <view class="view-text">清补凉</view>
+  </view>
+  <view class="viewpoint">
+    <view class="view-text">碱水馍</view>
+    <image src="../../assets/food3.jpg" mode=""/>
+  </view>
+</view>
+</scroll-view>

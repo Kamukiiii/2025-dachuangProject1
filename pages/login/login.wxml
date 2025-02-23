@@ -1,0 +1,26 @@
+
+<!-- login.wxml -->
+<view class="container">
+  <view wx:if="{{userInfo&&userInfo.nickName}}">
+    <image src="{{userInfo.avatarUrl}}" class="avatar"/>
+    <view>{{userInfo.nickName}}</view>
+    <button  class="logout" bind:tap="logout" >退出登录</button>
+  </view>
+  <button wx:else class="btn" bind:tap="wxlogin">微信登录</button>
+</view>
+
+<!-- 弹窗区域 -->
+<view class="pop-container" hidden="{{isHidden}}">
+  <view class="pop-login">
+    <view>授权登录</view>
+    <button open-type="chooseAvatar" bindchooseavatar="getAvatar" class="avatarbtn">
+      <image wx:if="{{avatarUrl}}" src="{{avatarUrl}}" class="pop-avatar"/>
+      <view wx:else>获取头像</view>
+    </button>
+    <input type="nickname" bindblur="getName" class="inp" placeholder="获取昵称" />
+    <view class="pop-confirm">
+      <view class="pop-no" bind:tap="popNO">取消</view>
+      <view class="pop-yes" bind:tap="popYes">确认</view>
+    </view>
+  </view>
+</view>
