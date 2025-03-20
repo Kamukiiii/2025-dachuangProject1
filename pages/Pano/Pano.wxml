@@ -1,0 +1,5 @@
+<view>
+ <pano panolist="{{panolist}}" width="320" height="240" key="{{key}}"  autoinit="{{false}}">
+
+  </pano>
+</view>

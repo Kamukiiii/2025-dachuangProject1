@@ -10,6 +10,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/Pano/Pano",
+          "pathName": "pages/Pano/Pano",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/comDetail/comDetail",
           "pathName": "pages/comDetail/comDetail",
           "query": "id=50de7f5d67b590bc064f14fa516b13b21",

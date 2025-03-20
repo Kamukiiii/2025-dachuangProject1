@@ -1,6 +1,6 @@
 <!--index.wxml-->
-
-<scroll-view class="scrollarea" scroll-y type="list">
+<scroll-view class="scrollarea" scroll-y bindscroll="onScroll"
+type="list">
 <view class="swiper">
  <swiper 
   autoplay 
@@ -61,7 +61,13 @@
 </view>
 <!-- 中部：板块介绍 -->
 <view class="middle">
-  <view class="content">景点推荐</view>
+  <view class="content">
+  景点推荐
+  </view>
+    <view class="vr"  wx:if="{{isshow}}" bind:tap="goNet">
+    <image src="../../assets/icon/VR.png" mode=""/>
+  </view>
+
   <view class="viewpoint">
     <image src="../../assets/viewpoint1.jpg" mode=""/>
     <view class="view-text">中和古镇</view>

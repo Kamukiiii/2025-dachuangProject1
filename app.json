@@ -7,7 +7,8 @@
     "pages/guideDetail/guideDetail",
     "pages/AiDetail/AiDetail",
     "pages/comDetail/comDetail",
-    "pages/addText/addText"
+    "pages/addText/addText",
+    "pages/Pano/Pano"
   ],
   "window": {
     "enablePullDownRefresh": true,
@@ -46,5 +47,12 @@
         "selectedIconPath": "./assets/icon/selected-login.png"
       }
     ]
+  },
+  "plugins": {
+    "wxPano":{
+      "version": "2.1.4",
+      "provider": "wx386c038238531f87"
+
+    }
   }
 }
